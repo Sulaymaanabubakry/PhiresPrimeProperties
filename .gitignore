@@ -1,0 +1,28 @@
+# Build artifacts
+dist/
+build/
+node_modules/
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Development scripts (keep for now, may remove later)
+# assets/images/create_placeholders.py
+# assets/images/download_images.sh

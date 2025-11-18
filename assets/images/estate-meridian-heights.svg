@@ -1,0 +1,17 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyestate-meridian-heights.svg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyestate-meridian-heights.svg)"/>
+  <rect y="400" width="800" height="200" fill="#228B22"/>
+  <!-- Main building -->
+  <polygon points="200,250 400,150 600,250" fill="#8B4513"/>
+  <rect x="200" y="250" width="400" height="300" fill="#BC8F8F"/>
+  <rect x="280" y="350" width="60" height="80" fill="#654321"/>
+  <rect x="380" y="300" width="80" height="80" fill="#87CEEB"/>
+  <rect x="500" y="300" width="60" height="60" fill="#87CEEB"/>
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Meridian Heights</text>
+</svg>

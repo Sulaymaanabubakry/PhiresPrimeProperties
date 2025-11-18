@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#E8F5E9"/>
+  <!-- Map-like grid -->
+  <line x1="0" y1="200" x2="1200" y2="200" stroke="#CCCCCC" stroke-width="2"/>
+  <line x1="0" y1="400" x2="1200" y2="400" stroke="#CCCCCC" stroke-width="2"/>
+  <line x1="0" y1="600" x2="1200" y2="600" stroke="#CCCCCC" stroke-width="2"/>
+  <line x1="300" y1="0" x2="300" y2="800" stroke="#CCCCCC" stroke-width="2"/>
+  <line x1="600" y1="0" x2="600" y2="800" stroke="#CCCCCC" stroke-width="2"/>
+  <line x1="900" y1="0" x2="900" y2="800" stroke="#CCCCCC" stroke-width="2"/>
+  <!-- Location pin -->
+  <circle cx="600" cy="400" r="30" fill="#C1272D"/>
+  <circle cx="600" cy="400" r="15" fill="white"/>
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#006838" text-anchor="middle">Lagos / Ibadan</text>
+</svg>

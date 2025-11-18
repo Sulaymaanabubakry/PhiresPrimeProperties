@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore all available land and estate projects from PHIRE'S PRIME PROPERTIES in Lagos and Ibadan. Find your perfect plot today.">
+    <title>All Projects - PHIRE'S PRIME PROPERTIES</title>
+    
+    <link rel="icon" type="image/svg+xml" href="./assets/images/phires-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <img src="./assets/images/phires-logo.svg" alt="PHIRE'S PRIME PROPERTIES" class="preloader-logo">
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-contact">
+                    <a href="tel:+2348151137842">
+                        <i class="ri-phone-line"></i>
+                        <span>0815 113 7842</span>
+                    </a>
+                    <a href="mailto:phiresprimeproperties@gmail.com">
+                        <i class="ri-mail-line"></i>
+                        <span>phiresprimeproperties@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/message/GDBYKY4TBZ4ND1" target="_blank">
+                        <i class="ri-whatsapp-line"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-container">
+                    <a href="index.html">
+                        <img src="./assets/images/phires-logo.svg" alt="PHIRE'S PRIME PROPERTIES" class="logo">
+                    </a>
+
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html" class="active">Projects</a></li>
+                        <li><a href="offers.html">Pre-Launch Offers</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <a href="contact.html" class="btn btn-primary nav-cta">Request Site Visit</a>
+
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <span class="mobile-menu-close">&times;</span>
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="projects.html">Projects</a>
+            <a href="offers.html">Pre-Launch Offers</a>
+            <a href="index.html#testimonials">Testimonials</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn btn-primary">Request Site Visit</a>
+        </div>
+    </div>
+
+    <!-- Bottom Card Navigation (Mobile) -->
+    <div class="bottom-nav">
+        <div class="bottom-nav-items">
+            <a href="index.html" class="bottom-nav-item">
+                <i class="ri-home-4-line"></i>
+                <span>Home</span>
+            </a>
+            <a href="projects.html" class="bottom-nav-item active">
+                <i class="ri-building-4-line"></i>
+                <span>Projects</span>
+            </a>
+            <a href="offers.html" class="bottom-nav-item">
+                <i class="ri-gift-line"></i>
+                <span>Offers</span>
+            </a>
+            <a href="contact.html" class="bottom-nav-item">
+                <i class="ri-phone-line"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Page Hero -->
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=1920&q=80'); min-height: 40vh;">
+            <div class="container">
+                <div class="hero-content" style="text-align: center; max-width: 100%;">
+                    <h1 class="hero-title">Our Projects</h1>
+                    <p class="hero-subtitle">Explore premium estates and land developments across Lagos and Ibadan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="section" style="padding-top: 3rem; background: var(--bg-light);">
+            <div class="container">
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label class="filter-label" for="locationFilter">Location</label>
+                        <select id="locationFilter" class="filter-select">
+                            <option value="all">All Locations</option>
+                            <option value="lagos">Lagos</option>
+                            <option value="ibadan">Ibadan</option>
+                            <option value="ogun">Ogun</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label" for="priceFilter">Price Range</label>
+                        <select id="priceFilter" class="filter-select">
+                            <option value="all">All Prices</option>
+                            <option value="0-3">Under ₦3M</option>
+                            <option value="3-5">₦3M - ₦5M</option>
+                            <option value="5-10">₦5M - ₦10M</option>
+                            <option value="10">Above ₦10M</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label" for="statusFilter">Status</label>
+                        <select id="statusFilter" class="filter-select">
+                            <option value="all">All Status</option>
+                            <option value="available">Available</option>
+                            <option value="selling">Selling Fast</option>
+                            <option value="new">New Launch</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="section" style="background: var(--bg-light); padding-top: 2rem;">
+            <div class="container">
+                <div class="card-grid" id="projectsGrid">
+                    <!-- Project cards will be here - same structure as index.html -->
+                    <!-- Copy all 8 project cards from index.html -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (copy from index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="./assets/images/phires-logo.svg" alt="PHIRE'S PRIME PROPERTIES" class="footer-logo">
+                    <p class="footer-description">Your trusted partner in affordable land ownership and real estate investment across Nigeria. Building dreams, creating wealth, one plot at a time.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/phiresprimeproperties" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://instagram.com/phiresprimeproperties" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/phiresprime" target="_blank" class="social-link" aria-label="Twitter">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/phiresprimeproperties" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="offers.html">Pre-Launch Offers</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <div class="footer-links">
+                        <a href="projects.html">Land Sales</a>
+                        <a href="projects.html">Estate Development</a>
+                        <a href="about.html">Property Documentation</a>
+                        <a href="contact.html">Site Inspection</a>
+                        <a href="about.html">Investment Advisory</a>
+                        <a href="contact.html">Customer Support</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact-item">
+                        <i class="ri-map-pin-line"></i>
+                        <span>Lagos state, Ibadan, Nigeria</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="ri-phone-line"></i>
+                        <a href="tel:+2348151137842">0815 113 7842</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="ri-mail-line"></i>
+                        <a href="mailto:phiresprimeproperties@gmail.com">phiresprimeproperties@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="ri-whatsapp-line"></i>
+                        <a href="https://wa.me/message/GDBYKY4TBZ4ND1" target="_blank">WhatsApp Chat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 PHIRE'S PRIME PROPERTIES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Project Detail Modal (copy from index.html) -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal">
+            <span class="modal-close" onclick="closeProjectModal()">&times;</span>
+            <div class="modal-content" id="projectModalContent">
+                <!-- Content will be dynamically inserted by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
