@@ -131,6 +131,43 @@ const animatedElements = document.querySelectorAll('.fade-in, .slide-left, .slid
 animatedElements.forEach(el => observer.observe(el));
 
 // ========================================
+// STATS COUNTER ANIMATION
+// ========================================
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+            entry.target.classList.add('counted');
+            const statNumber = entry.target.querySelector('.stat-number');
+            if (statNumber) {
+                const targetText = statNumber.textContent;
+                const targetNumber = parseInt(targetText.replace(/\D/g, ''));
+                const suffix = targetText.replace(/[0-9,]/g, '');
+                
+                let currentNumber = 0;
+                const duration = 2000; // 2 seconds
+                const increment = targetNumber / (duration / 16); // 60fps
+                
+                const updateCounter = () => {
+                    currentNumber += increment;
+                    if (currentNumber < targetNumber) {
+                        statNumber.textContent = Math.floor(currentNumber).toLocaleString() + suffix;
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        statNumber.textContent = targetNumber.toLocaleString() + suffix;
+                    }
+                };
+                
+                updateCounter();
+            }
+        }
+    });
+}, { threshold: 0.5 });
+
+// Observe all stat cards
+const statCards = document.querySelectorAll('.stat-card');
+statCards.forEach(card => statsObserver.observe(card));
+
+// ========================================
 // TESTIMONIALS CAROUSEL
 // ========================================
 let currentTestimonial = 0;
