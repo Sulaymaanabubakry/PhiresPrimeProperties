@@ -1,0 +1,11 @@
+<svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+  <!-- House icon -->
+  <path d="M30,50 L50,30 L70,50 L70,70 L30,70 Z" fill="#006838" stroke="#006838" stroke-width="2"/>
+  <path d="M40,55 L40,70 L60,70 L60,55 Z" fill="#C1272D"/>
+  <rect x="45" y="35" width="10" height="10" fill="#D4AF37"/>
+  
+  <!-- Company name text -->
+  <text x="80" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C1272D">PHIRE'S</text>
+  <text x="80" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#006838">PRIME</text>
+  <text x="80" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#006838">PROPERTIES</text>
+</svg>

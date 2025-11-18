@@ -1,0 +1,37 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#228B22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="1920" height="600" fill="url(#skyGrad)"/>
+  <!-- Ground -->
+  <rect y="600" width="1920" height="480" fill="url(#groundGrad)"/>
+  <!-- Houses -->
+  <g transform="translate(400, 400)">
+    <polygon points="0,100 100,0 200,100" fill="#8B4513"/>
+    <rect y="100" width="200" height="200" fill="#D2691E"/>
+    <rect x="50" y="150" width="40" height="60" fill="#654321"/>
+    <rect x="120" y="150" width="40" height="40" fill="#87CEEB"/>
+  </g>
+  <g transform="translate(700, 450)">
+    <polygon points="0,80 80,0 160,80" fill="#8B4513"/>
+    <rect y="80" width="160" height="180" fill="#CD853F"/>
+    <rect x="40" y="130" width="35" height="50" fill="#654321"/>
+    <rect x="100" y="130" width="35" height="35" fill="#87CEEB"/>
+  </g>
+  <g transform="translate(1100, 420)">
+    <polygon points="0,90 90,0 180,90" fill="#8B4513"/>
+    <rect y="90" width="180" height="190" fill="#DEB887"/>
+    <rect x="45" y="140" width="38" height="55" fill="#654321"/>
+    <rect x="105" y="140" width="38" height="38" fill="#87CEEB"/>
+  </g>
+  <!-- Text overlay -->
+  <text x="960" y="900" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" opacity="0.9">Premium Real Estate</text>
+</svg>
