@@ -285,7 +285,7 @@ const projectsData = {
     'lagoon-park': {
         name: 'Lagoon Park Estate',
         location: 'Lekki, Lagos',
-        image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80',
         plotSizes: '300SQM, 500SQM, 600SQM',
         price: 'From ₦5.5M',
         title: 'Certificate of Occupancy (C of O)',
@@ -308,7 +308,7 @@ const projectsData = {
     'garden-city': {
         name: 'Garden City Heights',
         location: 'Ibadan, Oyo',
-        image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1591474200742-8e512e6f98f8?w=800&q=80',
         plotSizes: '500SQM, 750SQM, 1000SQM',
         price: 'From ₦3.2M',
         title: 'Gazette',
@@ -331,7 +331,7 @@ const projectsData = {
     'ivory-gates': {
         name: 'Ivory Gates',
         location: 'Ibeju-Lekki, Lagos',
-        image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80',
         plotSizes: '450SQM, 600SQM, 800SQM',
         price: 'From ₦4.8M',
         title: 'Certificate of Occupancy (C of O)',
@@ -354,7 +354,7 @@ const projectsData = {
     'green-valley': {
         name: 'Green Valley Estate',
         location: 'Epe, Lagos',
-        image: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80',
         plotSizes: '600SQM, 900SQM, 1200SQM',
         price: 'From ₦2.9M',
         title: 'Excision in Progress',
@@ -377,7 +377,7 @@ const projectsData = {
     'royal-palm': {
         name: 'Royal Palm Residences',
         location: 'Ajah, Lagos',
-        image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80',
         plotSizes: '350SQM, 500SQM, 700SQM',
         price: 'From ₦6.2M',
         title: 'Certificate of Occupancy (C of O)',
@@ -400,7 +400,7 @@ const projectsData = {
     'meridian-heights': {
         name: 'Meridian Heights',
         location: 'Ibadan, Oyo',
-        image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
         plotSizes: '500SQM, 700SQM, 900SQM',
         price: 'From ₦3.5M',
         title: 'Certificate of Occupancy (C of O)',
@@ -423,7 +423,7 @@ const projectsData = {
     'crystal-bay': {
         name: 'Crystal Bay',
         location: 'Sangotedo, Lagos',
-        image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
         plotSizes: '400SQM, 550SQM, 750SQM',
         price: 'From ₦5.0M',
         title: "Governor's Consent",
@@ -446,7 +446,7 @@ const projectsData = {
     'emerald-springs': {
         name: 'Emerald Springs',
         location: 'Mowe, Ogun',
-        image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
         plotSizes: '300SQM, 450SQM, 650SQM',
         price: 'From ₦2.5M',
         title: 'Excision in Progress',
@@ -610,8 +610,8 @@ const galleryImages = [
     'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
     'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80',
     'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600573472591-ee6b68d14711?w=1200&q=80',
-    'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80'
+    'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&q=80',
+    'https://images.unsplash.com/photo-1591474200742-8e512e6f98f8?w=1200&q=80'
 ];
 
 function openLightbox(index) {
