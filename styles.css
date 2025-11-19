@@ -428,6 +428,48 @@ p {
   width: 100%;
 }
 
+/* Bottom Card Navigation (Mobile) */
+.bottom-nav {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 0.625rem 0.75rem;
+  z-index: 900;
+  width: 95%;
+  max-width: 360px;
+}
+
+.bottom-nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--spacing-xs);
+  color: var(--text-grey);
+  transition: color var(--transition-fast);
+  font-size: 0.7rem;
+}
+
+.bottom-nav-item i {
+  font-size: 1.2rem;
+}
+
+.bottom-nav-item.active,
+.bottom-nav-item:hover {
+  color: var(--primary-red);
+}
+
 /* ========================================
    HERO SECTION (Mobile First)
    ======================================== */
@@ -1404,6 +1446,68 @@ p {
 }
 
 /* ========================================
+   PRELOADER (Mobile First)
+   ======================================== */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: var(--spacing-md);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.preloader-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border-light);
+  border-top-color: var(--primary-red);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* ========================================
    ANIMATIONS
    ======================================== */
 @keyframes fadeIn {
@@ -1745,6 +1849,20 @@ p {
     justify-content: flex-start;
   }
   
+  /* Bottom nav */
+  .bottom-nav {
+    width: 95%;
+    max-width: 400px;
+  }
+  
+  .bottom-nav-item {
+    font-size: 0.75rem;
+  }
+  
+  .bottom-nav-item i {
+    font-size: 1.3rem;
+  }
+  
   /* WhatsApp FAB */
   .whatsapp-fab {
     width: 60px;
@@ -1792,6 +1910,16 @@ p {
   .filter-group {
     width: auto;
     min-width: 200px;
+  }
+  
+  /* Preloader */
+  .preloader-logo {
+    width: 140px;
+  }
+  
+  .preloader-spinner {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -1998,6 +2126,11 @@ p {
     font-size: 1.2rem;
   }
   
+  /* Hide bottom nav on desktop */
+  .bottom-nav {
+    display: none;
+  }
+  
   /* Scroll button */
   .scroll-to-top {
     bottom: 30px;
@@ -2063,6 +2196,17 @@ p {
   .accordion-body {
     padding: var(--spacing-md);
     font-size: 1rem;
+  }
+  
+  /* Preloader */
+  .preloader-logo {
+    width: 150px;
+  }
+  
+  .preloader-spinner {
+    width: 50px;
+    height: 50px;
+    border-width: 4px;
   }
 }
 
@@ -2178,8 +2322,10 @@ p {
    ======================================== */
 @media print {
   .header,
+  .bottom-nav,
   .scroll-to-top,
   .whatsapp-fab,
+  .preloader,
   .hamburger,
   .mobile-menu,
   .mobile-menu-overlay {
