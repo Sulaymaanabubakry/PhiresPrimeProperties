@@ -4,6 +4,16 @@
  */
 
 // ========================================
+// PRELOADER
+// ========================================
+window.addEventListener('load', function() {
+    const preloader = document.querySelector('.preloader');
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+    }, 1000);
+});
+
+// ========================================
 // MOBILE NAVIGATION
 // ========================================
 const hamburger = document.querySelector('.hamburger');
@@ -913,6 +923,26 @@ function updateActiveNavLink() {
 
 // Update active nav link on page load
 document.addEventListener('DOMContentLoaded', updateActiveNavLink);
+
+// ========================================
+// BOTTOM NAV ACTIVE STATE
+// ========================================
+function updateBottomNavActive() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+    
+    bottomNavItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+}
+
+// Update bottom nav on page load
+document.addEventListener('DOMContentLoaded', updateBottomNavActive);
 
 // ========================================
 // UTILITY FUNCTIONS
