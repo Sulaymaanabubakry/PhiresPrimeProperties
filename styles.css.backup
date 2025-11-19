@@ -131,8 +131,7 @@ p {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
-  width: 100%;
+  padding: 0 0.75rem;
 }
 
 .section {
@@ -262,9 +261,51 @@ p {
   box-shadow: var(--shadow-md);
 }
 
-/* Top Bar - Completely removed per requirements */
+/* Top Bar - Hidden on mobile */
 .top-bar {
-  display: none !important;
+  background: var(--primary-green);
+  color: var(--bg-white);
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    display: none !important;
+  }
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.top-bar-contact {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.top-bar-contact a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--bg-white);
+  font-size: 1.2rem;
+}
+
+.top-bar-contact span {
+  display: none;
+}
+
+.top-bar-contact a:hover {
+  color: var(--accent-gold);
 }
 
 .main-nav {
@@ -432,15 +473,15 @@ p {
 .bottom-nav {
   display: block;
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--bg-white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-  padding: 0.625rem 0.75rem;
+  padding: 0.5rem;
   z-index: 900;
-  width: 95%;
+  width: 98%;
   max-width: 360px;
 }
 
@@ -580,88 +621,6 @@ p {
 .trust-badge i {
   font-size: 1.2rem;
   color: var(--accent-gold);
-}
-
-/* Hero Carousel Styles */
-.hero-carousel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.hero-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.hero-slide.active {
-  opacity: 1;
-}
-
-.hero-carousel-controls {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  display: flex;
-  gap: 8px;
-}
-
-.hero-carousel-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.hero-carousel-dot.active {
-  background: var(--bg-white);
-  transform: scale(1.2);
-}
-
-.hero-carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(5px);
-  color: var(--bg-white);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 1.5rem;
-}
-
-.hero-carousel-arrow:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.hero-carousel-arrow.prev {
-  left: 20px;
-}
-
-.hero-carousel-arrow.next {
-  right: 20px;
 }
 
 /* ========================================
@@ -1382,10 +1341,10 @@ p {
    ======================================== */
 .scroll-to-top {
   position: fixed;
-  bottom: 110px;
+  bottom: 90px;
   right: 20px;
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
   background: var(--primary-red);
   color: var(--bg-white);
   border-radius: 50%;
@@ -1405,44 +1364,6 @@ p {
 .scroll-to-top:hover {
   background: var(--primary-green);
   transform: translateY(-5px);
-}
-
-/* ========================================
-   WHATSAPP FAB (Mobile First)
-   ======================================== */
-.whatsapp-fab {
-  position: fixed;
-  bottom: 110px;
-  left: 20px;
-  width: 56px;
-  height: 56px;
-  background: #25D366;
-  color: var(--bg-white);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 800;
-  transition: all var(--transition-fast);
-  box-shadow: var(--shadow-md);
-  font-size: 28px;
-  animation: whatsapp-pulse 2s ease-in-out infinite;
-}
-
-.whatsapp-fab:hover {
-  background: #128C7E;
-  transform: scale(1.1);
-  animation: none;
-}
-
-@keyframes whatsapp-pulse {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-  }
-  50% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-  }
 }
 
 /* ========================================
@@ -1469,10 +1390,6 @@ p {
 
 .preloader-content {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .preloader-logo {
@@ -1489,7 +1406,6 @@ p {
   border-top-color: var(--primary-red);
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  margin: 0 auto;
 }
 
 @keyframes spin {
@@ -1756,7 +1672,10 @@ p {
     padding: 0 1.5rem;
   }
   
-  /* Top bar removed per requirements */
+  /* Show top bar */
+  .top-bar {
+    display: block;
+  }
   
   .top-bar-contact span {
     display: inline;
@@ -1828,7 +1747,7 @@ p {
   
   /* Stats */
   .stats-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   
   .stat-number {
@@ -1861,18 +1780,6 @@ p {
   
   .bottom-nav-item i {
     font-size: 1.3rem;
-  }
-  
-  /* WhatsApp FAB */
-  .whatsapp-fab {
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-  }
-  
-  /* Hero carousel arrows show on tablet+ */
-  .hero-carousel-arrow {
-    display: flex;
   }
   
   /* Scroll button */
@@ -2137,15 +2044,6 @@ p {
     right: 30px;
   }
   
-  /* WhatsApp FAB positioning for desktop */
-  .whatsapp-fab {
-    bottom: 30px;
-    left: 30px;
-    width: 64px;
-    height: 64px;
-    font-size: 32px;
-  }
-  
   /* Buttons */
   .btn {
     padding: 14px 32px;
@@ -2222,41 +2120,10 @@ p {
   /* Show desktop navigation */
   .nav-menu {
     display: flex;
-    gap: 2rem;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .nav-menu li a {
-    font-weight: 500;
-    color: var(--text-dark);
-    transition: color var(--transition-fast);
-    padding: 0.5rem 0;
-    position: relative;
-  }
-  
-  .nav-menu li a:hover {
-    color: var(--primary-red);
-  }
-  
-  .nav-menu li a.active {
-    color: var(--primary-green);
-    font-weight: 600;
-  }
-  
-  .nav-menu li a.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--primary-red);
   }
   
   .nav-cta {
     display: inline-block;
-    white-space: nowrap;
   }
   
   /* Hide hamburger */
@@ -2324,7 +2191,6 @@ p {
   .header,
   .bottom-nav,
   .scroll-to-top,
-  .whatsapp-fab,
   .preloader,
   .hamburger,
   .mobile-menu,

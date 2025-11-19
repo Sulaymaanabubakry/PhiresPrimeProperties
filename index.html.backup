@@ -33,6 +33,26 @@
 
     <!-- Header -->
     <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-contact">
+                    <a href="tel:+2348151137842">
+                        <i class="ri-phone-line"></i>
+                        <span>0815 113 7842</span>
+                    </a>
+                    <a href="mailto:phiresprimeproperties@gmail.com">
+                        <i class="ri-mail-line"></i>
+                        <span>phiresprimeproperties@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/message/GDBYKY4TBZ4ND1" target="_blank">
+                        <i class="ri-whatsapp-line"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!-- Main Navigation -->
         <nav class="main-nav">
             <div class="container">
@@ -107,31 +127,7 @@
     <main>
         
         <!-- Hero Section -->
-        <section class="hero">
-            <!-- Hero Carousel -->
-            <div class="hero-carousel">
-                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=1920&q=80');"></div>
-                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80');"></div>
-                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=1920&q=80');"></div>
-                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1920&q=80');"></div>
-            </div>
-            
-            <!-- Hero Carousel Controls -->
-            <div class="hero-carousel-controls">
-                <span class="hero-carousel-dot active"></span>
-                <span class="hero-carousel-dot"></span>
-                <span class="hero-carousel-dot"></span>
-                <span class="hero-carousel-dot"></span>
-            </div>
-            
-            <!-- Hero Carousel Arrows -->
-            <button class="hero-carousel-arrow prev" onclick="prevHeroSlide()">
-                <i class="ri-arrow-left-s-line"></i>
-            </button>
-            <button class="hero-carousel-arrow next" onclick="nextHeroSlide()">
-                <i class="ri-arrow-right-s-line"></i>
-            </button>
-            
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=1920&q=80');">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">Affordable Land Ownership, Made Simple.</h1>
@@ -191,10 +187,6 @@
                             <div class="stat-card">
                                 <div class="stat-number">15+</div>
                                 <div class="stat-label">Active Projects</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-number">10+</div>
-                                <div class="stat-label">Years Experience</div>
                             </div>
                         </div>
                         
@@ -916,11 +908,6 @@
     <button class="scroll-to-top" onclick="scrollToTop()">
         <i class="ri-arrow-up-line"></i>
     </button>
-
-    <!-- WhatsApp FAB -->
-    <a href="https://wa.me/message/GDBYKY4TBZ4ND1" target="_blank" class="whatsapp-fab" title="Chat on WhatsApp">
-        <i class="ri-whatsapp-line"></i>
-    </a>
 
     <!-- Project Detail Modal -->
     <div class="modal-overlay" id="projectModal">
